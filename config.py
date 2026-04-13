@@ -15,4 +15,4 @@ Como obtener ANTHROPIC_KEY:
 TELEGRAM_TOKEN = "8346638470:AAFHul-igJpe__QkhycT18MhLaI8XD-hFiI"
 
 # API Key de Anthropic
-GEMINI_KEY = "AIzaSyDM_fWpcM7MRihiGBipPlL62itc4ViAFo4"
+GEMINI_KEY = "AIzaSyBlJ7I5zabjow0bEm2JVjq4OLbkz843LY4"
