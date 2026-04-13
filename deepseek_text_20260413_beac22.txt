@@ -1,0 +1,218 @@
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│    ╔═══════════════════════════════════════════════════════════════════╗   │
+│    ║                                                                   ║   │
+│    ║                    🐾 CHARLIE BOT v5 — INFOGRAFÍA                 ║   │
+│    ║                                                                   ║   │
+│    ║              "Un chatbot con memoria, emociones y personalidad"   ║   │
+│    ║                                                                   ║   │
+│    ╚═══════════════════════════════════════════════════════════════════╝   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  📊 ESTADÍSTICAS DEL PROYECTO                                               │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │   📁 Archivos: 3 principales + 1 de datos                           │   │
+│  │   🐍 Líneas de código: ~650 líneas                                  │   │
+│  │   🧠 Modelos IA: Gemini 2.5 Flash + 2.0 Flash (fallback)            │   │
+│  │   📝 Comandos: 11 comandos de usuario                                │   │
+│  │   😊 Emociones detectadas: 6 tipos                                  │   │
+│  │   💾 Memoria: 30 turnos + 20 notas importantes                       │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  🏗️ ARQUITECTURA                                                            │
+│                                                                             │
+│  ┌─────────────┐     ┌─────────────┐     ┌─────────────┐                   │
+│  │   Usuario   │────▶│  Telegram   │────▶│   Charlie   │                   │
+│  │   en Chat   │◀────│   Bot API   │◀────│    Bot      │                   │
+│  └─────────────┘     └─────────────┘     └──────┬──────┘                   │
+│                                                 │                           │
+│                                                 ▼                           │
+│                          ┌─────────────────────────────────────┐           │
+│                          │         PROCESAMIENTO LOCAL          │           │
+│                          ├─────────────────────────────────────┤           │
+│                          │ 🔍 Detección de emoción (keywords)   │           │
+│                          │ 🎯 Clasificación de intención        │           │
+│                          │ 📝 Extracción de datos personales    │           │
+│                          │ 💾 Notas importantes automáticas     │           │
+│                          └─────────────────────────────────────┘           │
+│                                                 │                           │
+│                                                 ▼                           │
+│                          ┌─────────────────────────────────────┐           │
+│                          │           GEMINI API                │           │
+│                          │  (respuesta con contexto completo)  │           │
+│                          └─────────────────────────────────────┘           │
+│                                                 │                           │
+│                                                 ▼                           │
+│                          ┌─────────────────────────────────────┐           │
+│                          │      ALMACENAMIENTO PERSISTENTE     │           │
+│                          │  data/perfiles.json                 │           │
+│                          │  • Perfil completo de cada usuario  │           │
+│                          │  • Historial de conversación        │           │
+│                          │  • Conteo de emociones              │           │
+│                          │  • Notas importantes                │           │
+│                          └─────────────────────────────────────┘           │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  🧠 CAPACIDADES CLAVE                                                        │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │  😊 EMOCIONES               📝 EXTRACCIÓN DE DATOS                   │   │
+│  │  ┌───────────────────┐     ┌───────────────────────────────────┐   │   │
+│  │  │ 😔 Tristeza       │     │ • Nombre: "me llamo Juan"         │   │   │
+│  │  │ 😄 Alegría        │     │ • Edad: "tengo 25 años"           │   │   │
+│  │  │ ❤️ Amor           │     │ • Gustos: "me gusta la música"    │   │   │
+│  │  │ 😤 Enojo          │     │ • Ocupación: "trabajo como dev"   │   │   │
+│  │  │ 😨 Miedo          │     │ • Lugar: "vivo en Madrid"         │   │   │
+│  │  │ 😲 Sorpresa       │     │ • Estado de ánimo                 │   │   │
+│  │  └───────────────────┘     └───────────────────────────────────┘   │   │
+│  │                                                                      │   │
+│  │  🎯 INTENCIONES            📊 COMANDOS DISPONIBLES                   │   │
+│  │  ┌───────────────────┐     ┌───────────────────────────────────┐   │   │
+│  │  │ • chiste          │     │ /yo       - Qué sé de ti          │   │   │
+│  │  │ • consejo         │     │ /perfil   - Tu ficha completa     │   │   │
+│  │  │ • dato curioso    │     │ /estado   - Resumen emocional     │   │   │
+│  │  │ • apoyo emocional │     │ /infografia - Perfil en imagen    │   │   │
+│  │  │ • entretenimiento │     │ /usuario  - Datos de otro usuario │   │   │
+│  │  │ • recomendación   │     │ /chiste   - Un chiste divertido   │   │   │
+│  │  │ • reflexión       │     │ /dato     - Dato curioso          │   │   │
+│  │  │ • consulta usuario│     │ /frase    - Reflexión motivadora  │   │   │
+│  │  └───────────────────┘     └───────────────────────────────────┘   │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  💾 ESTRUCTURA DE DATOS (por usuario)                                       │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │  perfil.json                                                         │   │
+│  │  {                                                                   │   │
+│  │    "nombre": "Juan",                                                 │   │
+│  │    "edad": 25,                                                       │   │
+│  │    "ocupacion": "programador",                                       │   │
+│  │    "gustos": ["música", "cine", "videojuegos"],                      │   │
+│  │    "lugar": "Madrid",                                                │   │
+│  │    "total_mensajes": 127,                                            │   │
+│  │    "racha_dias": 5,                                                  │   │
+│  │    "emociones_frecuentes": {"joy": 45, "sadness": 12, "anger": 3},   │   │
+│  │    "notas_importantes": ["tiene miedo a las alturas",                │   │
+│  │                          "su sueño es viajar a Japón"],               │   │
+│  │    "historial": [{"usuario": "...", "charlie": "..."}]                │   │
+│  │  }                                                                   │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  🛠️ TECNOLOGÍAS USADAS                                                      │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │   🐍 Python 3.8+                                                     │   │
+│  │   🤖 Google Gemini API (generativeai)                                │   │
+│  │   📱 python-telegram-bot v20+                                        │   │
+│  │   🖼️ Pillow (PIL) - para infografías                                 │   │
+│  │   💾 JSON - almacenamiento persistente                               │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  🔄 FLUJO DE RESPUESTA                                                      │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │   1. Usuario escribe: "Estoy triste, mi perro se enfermó"            │   │
+│  │                    │                                                  │   │
+│  │                    ▼                                                  │   │
+│  │   2. Charlie detecta: emoción = sadness, intención = apoyo_emocional │   │
+│  │                    │                                                  │   │
+│  │                    ▼                                                  │   │
+│  │   3. Extrae datos: guarda nota "mi perro se enfermó"                 │   │
+│  │                    │                                                  │   │
+│  │                    ▼                                                  │   │
+│  │   4. Construye prompt con:                                           │   │
+│  │      - Perfil completo del usuario                                   │   │
+│  │      - Historial de conversación                                     │   │
+│  │      - Emoción detectada                                             │   │
+│  │      - Instrucción específica (apoyo emocional: NO dar consejos)     │   │
+│  │                    │                                                  │   │
+│  │                    ▼                                                  │   │
+│  │   5. Gemini genera respuesta empática                                │   │
+│  │                    │                                                  │   │
+│  │                    ▼                                                  │   │
+│  │   6. Charlie guarda el turno y responde:                            │   │
+│  │      "Lamento mucho lo de tu perro 😔. Debe ser muy duro para ti.    │   │
+│  │       ¿Quieres contarme cómo te sientes?"                            │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ⭐ PUNTOS FUERTES DEL PROYECTO                                             │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │  ✓ MEMORIA LARGA: Recuerda hasta 30 turnos anteriores               │   │
+│  │  ✓ NOTAS AUTOMÁTICAS: Detecta y guarda info importante sin pedir    │   │
+│  │  ✓ RACHA DIARIA: Mide la consistencia de la conversación            │   │
+│  │  ✓ INFOGRAFÍAS: Genera imágenes visuales del perfil                 │   │
+│  │  ✓ CONSULTA OTROS USUARIOS: El admin puede ver perfiles ajenos      │   │
+│  │  ✓ FALLBACK DE MODELOS: Si Gemini falla, usa modelo secundario      │   │
+│  │  ✓ REINTENTOS AUTOMÁTICOS: Hasta 3 intentos con backoff             │   │
+│  │  ✓ RESPUESTAS SIN MARKDOWN: Texto limpio y natural                  │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  🚀 PARA DESPLEGAR EN RENDER (WEB SERVICE + WEBHOOK)                        │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │  ⚠️ ADAPTACIÓN NECESARIA:                                            │   │
+│  │                                                                      │   │
+│  │  Tu bot actual usa run_polling() → Render lo DETIENE                 │   │
+│  │                                                                      │   │
+│  │  SOLUCIÓN: Agregar servidor web de acompañamiento                    │   │
+│  │                                                                      │   │
+│  │  1. Instalar: pip install uvicorn starlette                         │   │
+│  │                                                                      │   │
+│  │  2. Modificar código para usar webhook                              │   │
+│  │     (ver ejemplo en mi respuesta anterior)                          │   │
+│  │                                                                      │   │
+│  │  3. En Render: Web Service (no Background Worker)                   │   │
+│  │     • Build Command: pip install -r requirements.txt                │   │
+│  │     • Start Command: uvicorn bot:app --host 0.0.0.0 --port $PORT    │   │
+│  │     • Variables: TELEGRAM_TOKEN, GEMINI_KEY                         │   │
+│  │     • Health Check: /healthcheck                                    │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  📝 NOTAS DEL PROYECTO                                                      │
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                                                                      │   │
+│  │  ⚠️ config.py contiene credenciales REALES expuestas en este chat   │   │
+│  │     → Revócalas URGENTE en BotFather y Google AI Studio             │   │
+│  │                                                                      │   │
+│  │  📁 Estructura de archivos:                                          │   │
+│  │     charlie_bot.py   - Lógica principal                             │   │
+│  │     config.py        - Tokens (NUNCA subir a GitHub)                │   │
+│  │     perfil_usuario.py - Gestión de datos                            │   │
+│  │     requirements.txt - Dependencias                                 │   │
+│  │     data/perfiles.json - Base de datos (se crea sola)               │   │
+│  │                                                                      │   │
+│  │  🎨 La infografía se genera con Pillow sin fuentes externas          │   │
+│  │                                                                      │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└─────────────────────────────────────────────────────────────────────────────┘
